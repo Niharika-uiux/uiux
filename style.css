@@ -1,0 +1,620 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff; /* add a background color to your nav bar */
+  z-index: 1000; /* make sure the nav bar is on top of other elements */
+  padding: 10px; /* add some padding to your nav bar */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* add a box shadow to your nav bar */
+}
+
+.header-container {
+  background-color: cyan;
+  background-size: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 70px;
+  width: 100%;
+  height: 60px;
+}
+
+.hom {
+  color: black;
+  text-decoration: none;
+}
+
+.s1 {
+  background-color: cyan;
+  border: none;
+}
+
+.L-1 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 480px;
+}
+
+.L-img {
+  width: 100%;
+  height: 480px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  align-items: center;
+  -o-object-position: top left;
+     object-position: top left;
+}
+
+.fadeInDown {
+  position: absolute;
+  top: 350px;
+  left: 100px;
+  font-family: lato;
+  font-size: 35px;
+  color: blue;
+  line-height: 55px;
+}
+
+.fadeInDown {
+  animation-name: fadeInDown;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-delay: 1.5s;
+}
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+.o {
+  position: absolute;
+  top: 250px;
+  left: 100px;
+  font-family: lato;
+  font-size: 45px;
+  color: blue;
+  margin: auto;
+}
+
+.o {
+  animation-name: fadeInUp;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-delay: 0.5s;
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+.p {
+  position: absolute;
+  top: 200px;
+  left: 100px;
+  font-family: lato;
+  font-size: 20px;
+  margin-top: 270px;
+  color: white;
+  background-color: blue;
+  border-radius: 20px;
+  padding: 20px 20px;
+}
+
+.p:hover {
+  background: purple;
+}
+
+.white {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: cyan;
+  width: 100%;
+  max-width: auto;
+}
+
+.grad-hover {
+  font-size: 38px;
+  background: rgb(124, 64, 144);
+  background: linear-gradient(90deg, rgb(124, 64, 144) 0%, rgb(60, 175, 119) 34%, rgb(25, 123, 193) 53%, rgb(211, 30, 41) 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  margin-top: 40px;
+  text-align: center;
+}
+
+@supports (-webkit-background-clip: text) {
+  .grad-hover {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+.q {
+  text-align: center;
+}
+
+.effect-cont {
+  display: flex;
+  padding-left: 20px;
+  gap: 40px;
+}
+
+.image-boxes {
+  position: relative;
+  height: 190px;
+}
+
+.image-boxes .box img {
+  width: 250px;
+  height: 100%;
+}
+
+.image-boxes .over-content {
+  border: 3px solid cyan;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+}
+
+.image-boxes:hover .over-content {
+  animation-name: slideInUpOverContent;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  transition: all 1s ease-in-out;
+  opacity: 1;
+  width: auto;
+}
+@keyframes slideInUpOverContent {
+  0% {
+    transform: translateY(100%);
+    visibility: visible;
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.image-boxes .over-content h3 {
+  color: cyan;
+}
+
+.image-boxes .over-content p {
+  color: white;
+}
+
+.image-boxes .over-content button {
+  padding: 20px 20px;
+  background-color: cyan;
+  color: white;
+  border: none;
+}
+
+.about-content {
+  width: 80%;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.about-content iframe {
+  margin: 20px auto;
+  border: none;
+  width: 100%;
+  height: 315px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.white {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: cyan;
+  width: 100%;
+  max-width: auto;
+}
+
+.ann {
+  justify-content: center;
+  color: white;
+  top: 20px;
+}
+
+.flip {
+  width: 400px;
+  max-width: auto;
+  height: 200px;
+}
+
+.flip-container {
+  display: flex;
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+}
+
+.flip-box {
+  width: 350px;
+  height: 200px;
+  margin: 40px;
+  position: relative;
+  transform-style: preserve-3d;
+  transform-origin: center;
+  transition: transform 1s ease-in-out;
+}
+
+.flip-box-front {
+  position: absolute;
+  width: 250px;
+  height: 200px;
+  backface-visibility: hidden;
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flip-box-back {
+  position: absolute;
+  width: 250px;
+  height: 200px;
+  backface-visibility: hidden;
+  background-color: rgba(218, 255, 252, 0.67);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: rotateY(180deg);
+}
+
+.flip-box:hover {
+  transform: rotateY(180deg);
+}
+
+.flip-box img {
+  width: 200px;
+}
+
+.flip-box-back h2 {
+  margin-bottom: 10px;
+}
+
+.flip-box-back .btn-back {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.flip-box-back button {
+  padding: 10px 20px;
+  background-color: white;
+  color: black;
+  border: none;
+  margin-top: 10px;
+  transition: all 1s ease;
+}
+
+.flip-box-back button:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Mobile styles (max-width: 480px) */
+@media (max-width: 480px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  .nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff; /* add a background color to your nav bar */
+    z-index: 1000; /* make sure the nav bar is on top of other elements */
+    padding: 10px; /* add some padding to your nav bar */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* add a box shadow to your nav bar */
+  }
+  .header-container {
+    background-color: cyan;
+    background-size: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 70px;
+    width: 100%;
+    height: 60px;
+  }
+  .hom {
+    color: black;
+    text-decoration: none;
+  }
+  .s1 {
+    background-color: cyan;
+    border: none;
+  }
+  .L-1 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 480px;
+  }
+  .L-img {
+    width: 100%;
+    height: 480px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    align-items: center;
+    -o-object-position: top left;
+       object-position: top left;
+  }
+  .fadeInDown {
+    position: absolute;
+    top: 350px;
+    left: 100px;
+    font-family: lato;
+    font-size: 35px;
+    color: blue;
+    line-height: 55px;
+  }
+  .fadeInDown {
+    animation-name: fadeInDown;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-delay: 1.5s;
+  }
+  @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      transform: translate3d(0, -100%, 0);
+    }
+    100% {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  .o {
+    position: absolute;
+    top: 250px;
+    left: 100px;
+    font-family: lato;
+    font-size: 45px;
+    color: blue;
+    margin: auto;
+  }
+  .o {
+    animation-name: fadeInUp;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-delay: 0.5s;
+  }
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+    }
+    100% {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  .p {
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    font-family: lato;
+    font-size: 20px;
+    margin-top: 270px;
+    color: white;
+    background-color: blue;
+    border-radius: 20px;
+    padding: 20px 20px;
+  }
+  .p:hover {
+    background: purple;
+  }
+  .white {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: cyan;
+    width: 100%;
+    max-width: auto;
+  }
+  .grad-hover {
+    font-size: 38px;
+    background: rgb(124, 64, 144);
+    background: linear-gradient(90deg, rgb(124, 64, 144) 0%, rgb(60, 175, 119) 34%, rgb(25, 123, 193) 53%, rgb(211, 30, 41) 100%);
+    -webkit-background-clip: text;
+            background-clip: text;
+    color: transparent;
+    margin-top: 40px;
+    text-align: center;
+  }
+  @supports (-webkit-background-clip: text) {
+    .grad-hover {
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  .q {
+    text-align: center;
+  }
+  .effect-cont {
+    display: flex;
+    padding-left: 20px;
+  }
+  .image-boxes {
+    position: relative;
+    height: 190px;
+  }
+  .image-boxes .box img {
+    width: 200px;
+    height: 100%;
+  }
+  .image-boxes .over-content {
+    border: 3px solid cyan;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+  }
+  .image-boxes:hover .over-content {
+    animation-name: slideInUpOverContent;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    transition: all 1s ease-in-out;
+    opacity: 1;
+    width: auto;
+  }
+  @keyframes slideInUpOverContent {
+    0% {
+      transform: translateY(100%);
+      visibility: visible;
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  .image-boxes .over-content h3 {
+    color: cyan;
+  }
+  .image-boxes .over-content p {
+    color: white;
+  }
+  .image-boxes .over-content button {
+    padding: 20px 20px;
+    background-color: cyan;
+    color: white;
+    border: none;
+  }
+  .about-content {
+    width: 80%;
+    margin: 40px auto;
+    text-align: center;
+  }
+  .about-content iframe {
+    margin: 20px auto;
+    border: none;
+    width: 100%;
+    height: 315px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .white {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: cyan;
+    width: 100%;
+    max-width: auto;
+  }
+  .ann {
+    justify-content: center;
+    color: white;
+    top: 20px;
+  }
+  .flip {
+    width: 400px;
+    max-width: auto;
+    height: 200px;
+  }
+  .flip-container {
+    display: flex;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+  }
+  .flip-box {
+    width: 350px;
+    height: 200px;
+    margin: 40px;
+    position: relative;
+    transform-style: preserve-3d;
+    transform-origin: center;
+    transition: transform 1s ease-in-out;
+  }
+  .flip-box-front {
+    position: absolute;
+    width: 250px;
+    height: 200px;
+    backface-visibility: hidden;
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .flip-box-back {
+    position: absolute;
+    width: 250px;
+    height: 200px;
+    backface-visibility: hidden;
+    background-color: rgba(218, 255, 252, 0.67);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: rotateY(180deg);
+  }
+  .flip-box:hover {
+    transform: rotateY(180deg);
+  }
+  .flip-box img {
+    width: 200px;
+  }
+  .flip-box-back h2 {
+    margin-bottom: 10px;
+  }
+  .flip-box-back .btn-back {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+  .flip-box-back button {
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    border: none;
+    margin-top: 10px;
+    transition: all 1s ease;
+  }
+  .flip-box-back button:hover {
+    background-color: black;
+    color: white;
+  }
+}/*# sourceMappingURL=style.css.map */
